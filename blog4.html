@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>blog-boilerplate</title>
+    <style>
+    body {width: 82%;margin: 1em auto;background: #ececec;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";line-height: 1.5;font-size:18px;}
+    .step {background: #fafafa;margin: 1em; padding: 1em;border: 1px solid #e0e0e0;border-radius:4px;}
+    code {background: #e0e0e0; padding: .2em .5em .2em .5em;}
+    h3 {margin-bottom: 0; padding-bottom: 0;}
+    p:first-child {padding-top: 0;margin-top:0;}
+    img {width: 100%; height: auto;}
+    </style>
+  </head>
+  <body>
+
+<h1 id="how-to-create-a-bootable-ubuntu-usb-stick-from-windows">How To Create A Bootable Ubuntu USB Stick from Windows</h1>
+<p>This article will help guide you on how you can test out ubuntu without having to touch your PC configuration. From this tutorial it will be possible to install or upgrade ubuntu or even  boot into ubuntu on a borrowed machine or from an internet cafe.</p>
+<h2 id="requirements">Requirements</h2>
+<p><em>A 4GB or larger USB stick/flash drive
+</em>Microsoft Windows XP or later
+<em><a href="https://rufus.ie/">Rufus</a>, which is a free USB stick writing tool
+</em><a href="https://ubuntu.com/download/desktop/thank-you?version=20.04&amp;architecture=amd64">Ubuntu ISO file</a></p>
+<h2 id="usb-selection">USB Selection</h2>
+<p>Perform the following to configure your USB device in Rufus:</p>
+<ol>
+<li>Launch Rufus</li>
+<li>Insert your USB stick</li>
+<li>Rufus will update to set the device within the Device field</li>
+<li>If the Device selected is incorrect (perhaps you have multiple USB storage devices), select the correct one from the device field’s drop-down menu</li>
+</ol>
+<h2 id="boot-selection-and-partition-scheme">Boot selection and Partition scheme</h2>
+<p>Now choose the Boot selection. Choices will be <em>Non bootable</em> and <em>FreeDOS</em>. Since you are creating a bootable Ubuntu device select <strong>FreeDOS</strong>.</p>
+<h2 id="select-the-ubuntu-iso-file">Select the Ubuntu ISO file</h2>
+<p>To select the Ubuntu ISO file you downloaded previously, click the <strong>SELECT</strong> to the right of “Boot selection”. If this is the only ISO file present in the Downloads folder you will only see one file listed.</p>
+<p>Select the appropriate ISO file and click on <strong>Open</strong>.</p>
+<h2 id="write-the-iso">Write the ISO</h2>
+<p>The <em>Volume label</em> will be updated to reflect the ISO selected.</p>
+<p>Leave all other parameters with their default values and click <strong>START</strong> to initiate the writing process.</p>
+<h2 id="additional-downloads">Additional Downloads</h2>
+<p>You may be alerted that Rufus requires additional files to complete writing the ISO. If this dialog box appears, select <strong>Yes</strong> to continue.</p>
+<h2 id="write-warnings">Write Warnings</h2>
+<ol>
+<li><p>You will then be alerted that Rufus has detected that the Ubuntu ISO is an <em>ISOHybrid image</em>. This means the same image file can be used as the source for both a DVD and a USB stick without requiring conversion.</p>
+</li>
+<li><p>Keep Write in ISO Image mode selected and click on <strong>OK</strong> to continue.</p>
+</li>
+<li><p>Rufus will also warn you that all data on your selected USB device is about to be destroyed. This is a good moment to double check you’ve selected the correct device before clicking <strong>OK</strong> when you’re confident you have.</p>
+</li>
+</ol>
+<h2 id="writing-the-iso">Writing the ISO</h2>
+<p>Now the ISO will be on the USB stick and the writing process should take roughly 10 minutes</p>
+<h2 id="finished-">Finished!</h2>
+<p>When the writing process is complete, the Status bar will be green filled and the word <strong>READY</strong> will appear in the center. Select <strong>CLOSE</strong> to complete the writing process.</p>
+<p>Congratulations! You now have Ubuntu on your USB stick.</p>
